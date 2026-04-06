@@ -28,11 +28,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Orion" }],
   creator: "Orion",
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL("https://orion-lovat-tau.vercel.app/"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://your-domain.com",
+    url: "https://orion-lovat-tau.vercel.app/",
     siteName: "Orion",
     title: "Orion — AI Infrastructure Control System",
     description:
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   alternates: {
-    canonical: "https://your-domain.com",
+    canonical: "https://orion-lovat-tau.vercel.app/",
   },
 };
 
