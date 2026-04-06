@@ -39,22 +39,19 @@ export const metadata: Metadata = {
       "Manage and scale your AI systems with Orion. A powerful AI operating system for orchestration, deployment, and control.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://orion-lovat-tau.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Orion — AI Infrastructure Control System",
       },
     ],
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
+  twitter: {
+    card: "summary_large_image",
+    title: "Orion — AI Infrastructure Control System",
+    description:
+      "Manage and scale your AI systems with Orion. A powerful AI operating system.",
+    images: ["https://orion-lovat-tau.vercel.app/og-image.jpg"],
   },
   icons: {
     icon: "/favicon.svg",
