@@ -4,8 +4,6 @@
   <img src="public/icon-512x512.png" alt="Orion Logo" width="80" height="80" />
 </div>
 
----
-
 ## Overview
 
 **Orion** adalah platform **AI-powered infrastructure control** yang membantu engineer menganalisis, memahami, dan mengeksekusi perintah sistem dengan lebih aman.
@@ -17,8 +15,6 @@ Alih-alih langsung menjalankan command berisiko, Orion memberikan:
 - Risk level
 - Safety warning sebelum eksekusi
 
----
-
 ## Core Concept
 
 > _"Orion tidak menggantikan engineer — Orion memperkuat decision-making mereka."_
@@ -28,8 +24,6 @@ Orion bekerja sebagai **layer intelligence** di atas command line:
 - Mengerti command
 - Mengevaluasi risiko
 - Memberikan konteks sebelum eksekusi
-
----
 
 ## Safety System (Updated)
 
@@ -48,8 +42,6 @@ Dampak:
 - Kehilangan seluruh sistem
 - Tidak bisa recovery tanpa backup
 
----
-
 ### 🟠 Warning (High Risk)
 
 Contoh:
@@ -65,16 +57,12 @@ Dampak:
 - Service disruption
 - Security risk
 
----
-
 ### 🟢 Safe
 
 Contoh:
 
 - `ls -la`
 - monitoring commands
-
----
 
 ## AI Command Analysis (Enhanced)
 
@@ -98,8 +86,6 @@ Output analisis:
 - Build berikutnya lebih lambat
 - Risk: Medium
 
----
-
 ## Features
 
 - **AI Command Analysis** (real-time)
@@ -109,8 +95,6 @@ Output analisis:
 - **Chat-based Infrastructure Control**
 - **Real-time Metrics (CPU, RAM, Uptime)**
 - **Dark / Light Mode**
-
----
 
 ## Quick Prompts System
 
@@ -133,8 +117,6 @@ Orion akan menjelaskan:
 - dampak ke user
 - best practice sebelum eksekusi
 
----
-
 ## Architecture
 
 Orion menggunakan pendekatan:
@@ -145,15 +127,11 @@ Orion menggunakan pendekatan:
 - **Molecules** → gabungan atoms
 - **Organisms** → layout kompleks
 
----
-
 ### AI Layer
 
 - Pattern-based detection (`DANGEROUS_COMMANDS`)
 - Context-aware analysis (`ANALYSIS_DATABASE`)
 - Predefined intelligent responses (`QUICK_PROMPTS`, `CHAT_SUGGESTIONS`)
-
----
 
 ## Project Structure
 
@@ -170,8 +148,6 @@ src/
 └── lib/
 ```
 
----
-
 ## Tech Stack
 
 | Teknologi    | Kegunaan         |
@@ -182,20 +158,19 @@ src/
 | next-themes  | Theme management |
 | Lucide React | Icons            |
 
----
-
 ## Getting Started
 
 ### Install
 
 ```bash
-**`Menggunakan npm`**
+
+Menggunakan npm
 
 git clone https://github.com/hanifakbari/orion.git
 cd orion
 npm install
 
-**`Menggunakan yarn`**
+Menggunakan yarn
 
 git clone https://github.com/hanifakbari/orion.git
 cd orion
@@ -215,8 +190,6 @@ yarn dev
 
 Buka: http://localhost:3000
 
----
-
 ## Build Production
 
 ```bash
@@ -230,5 +203,3 @@ yarn
 yarn build
 yarn start
 ```
-
----
