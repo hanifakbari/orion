@@ -39,7 +39,7 @@ export const metadata: Metadata = {
       "Manage and scale your AI systems with Orion. A powerful AI operating system for orchestration, deployment, and control.",
     images: [
       {
-        url: "https://orion-lovat-tau.vercel.app/og-image.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Orion — AI Infrastructure Control System",
