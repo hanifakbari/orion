@@ -69,14 +69,17 @@ export const TopBar = ({ sidebarOpen, onToggleSidebar }: TopBarProps) => {
             <div className="h-6 w-6" />
           )}
         </button>
-        <StatusPill
-          icon={CircleDot}
-          iconColor="text-accent-green"
-          label="Online"
-        />
-        <StatusPill icon={MemoryStick} label="RAM" value={`${ram}%`} />
-        <StatusPill icon={Clock} label="Uptime" value={uptime} />
-        <StatusPill icon={Cpu} label="CPU" value={`${cpu}%`} />
+
+        <div className="hidden items-center gap-2 md:flex">
+          <StatusPill
+            icon={CircleDot}
+            iconColor="text-accent-green"
+            label="Online"
+          />
+          <StatusPill icon={MemoryStick} label="RAM" value={`${ram}%`} />
+          <StatusPill icon={Clock} label="Uptime" value={uptime} />
+          <StatusPill icon={Cpu} label="CPU" value={`${cpu}%`} />
+        </div>
       </div>
     </header>
   );
