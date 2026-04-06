@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Search, Plus, Bookmark, Folder, Clock } from "lucide-react";
+import { Search, Plus, Bookmark, Folder, Clock, X } from "lucide-react";
 import { cn } from "@/app/lib/utils";
 import { useMetrics } from "@/hooks/useMatrics";
 import {
@@ -35,13 +35,14 @@ export const Sidebar = ({ isOpen, onToggle }: SidebarProps) => {
   return (
     <aside
       className={cn(
-        "glass z-50 flex shrink-0 flex-col overflow-hidden border-r border-border-custom bg-bg-secondary transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]",
+        "glass z-50 flex shrink-0 flex-col overflow-hidden border-r border-border-custom bg-bg-secondary backdrop-blur-md transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]",
         isOpen
           ? "pointer-events-auto fixed inset-y-0 left-0 w-[80vw] max-w-xs translate-x-0 opacity-100 md:static md:h-auto md:w-[300px]"
           : "pointer-events-none fixed inset-y-0 left-0 w-[80vw] max-w-xs -translate-x-full opacity-0 md:static md:w-0 md:translate-x-0 md:opacity-0",
       )}
       aria-label="Sidebar"
     >
+      {/* Logo */}
       {/* Logo */}
       <header className="shrink-0 px-4 py-4">
         <div className="flex items-center gap-2">
@@ -55,6 +56,15 @@ export const Sidebar = ({ isOpen, onToggle }: SidebarProps) => {
           <span className="font-mono text-lg font-bold tracking-widest text-text-primary lg:text-2xl">
             Orion
           </span>
+
+          <button
+            type="button"
+            onClick={onToggle}
+            className="ml-auto flex h-8 w-8 items-center justify-center rounded-lg text-text-muted transition-all hover:border-accent-red hover:text-accent-red md:hidden"
+            aria-label="Tutup sidebar"
+          >
+            <X className="h-10 w-10 text-text-primary" />
+          </button>
         </div>
       </header>
 
