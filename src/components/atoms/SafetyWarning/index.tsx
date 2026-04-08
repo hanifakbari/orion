@@ -36,9 +36,7 @@ export const SafetyWarning = ({
         <div
           className={cn(
             "flex h-10 w-10 shrink-0 items-center justify-center rounded-xl",
-            isCritical
-              ? "bg-red-500/20 text-red-500"
-              : "bg-accent-red/15 text-accent-red",
+            isCritical ? "bg-red-500/20 text-red-500" : "text-accent-red",
           )}
         >
           {isCritical ? (
@@ -100,9 +98,7 @@ export const SafetyWarning = ({
             title={cmd.desc}
             className={cn(
               "inline-block rounded-md px-2.5 py-1 text-xs font-medium",
-              isCritical
-                ? "bg-red-500/20 text-red-500"
-                : "bg-accent-red/15 text-accent-red",
+              isCritical ? "bg-red-500/20 text-red-500" : "text-accent-red",
             )}
           >
             {cmd.pattern}

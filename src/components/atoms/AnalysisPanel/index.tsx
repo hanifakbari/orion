@@ -30,7 +30,7 @@ export const AnalysisPanel = ({
         "animate-slide-up overflow-hidden rounded-xl",
         isDangerous
           ? "border border-red-500/20 bg-red-500/5"
-          : "border border-accent-cyan/20 bg-bg-secondary",
+          : "border border-accent-cyan/20 bg-surface",
       )}
     >
       {/* ── Header ── */}

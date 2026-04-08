@@ -1,5 +1,5 @@
 import { StatusPill } from "@/components";
-import { CircleDot, MemoryStick, Clock, Cpu } from "lucide-react";
+import { Dot, MemoryStick, Clock, Cpu } from "lucide-react";
 
 interface SidebarStatsProps {
   ram: number | string;
@@ -17,11 +17,7 @@ export const SidebarStats = ({ ram, cpu, uptime }: SidebarStatsProps) => {
         Status Sistem
       </h2>
 
-      <StatusPill
-        icon={CircleDot}
-        iconColor="text-accent-green"
-        label="Online"
-      />
+      <StatusPill icon={Dot} iconColor="text-accent-green" label="Online" />
       <StatusPill icon={MemoryStick} label="RAM" value={`${ram}%`} />
       <StatusPill icon={Clock} label="Uptime" value={uptime} />
       <StatusPill icon={Cpu} label="CPU" value={`${cpu}%`} />

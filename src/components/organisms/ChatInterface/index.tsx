@@ -507,15 +507,15 @@ export const ChatInterface = ({
             <div className="rounded-xl border border-border-custom bg-surface p-4">
               <div className="flex h-6 items-end gap-2">
                 <span
-                  className="animate-dot-wave h-2 w-2 rounded-full bg-accent-cyan"
+                  className="h-2 w-2 animate-dot-wave rounded-full bg-accent-cyan"
                   style={{ animationDelay: "0s" }}
                 />
                 <span
-                  className="animate-dot-wave h-2 w-2 rounded-full bg-accent-cyan"
+                  className="h-2 w-2 animate-dot-wave rounded-full bg-accent-cyan"
                   style={{ animationDelay: "0.2s" }}
                 />
                 <span
-                  className="animate-dot-wave h-2 w-2 rounded-full bg-accent-cyan"
+                  className="h-2 w-2 animate-dot-wave rounded-full bg-accent-cyan"
                   style={{ animationDelay: "0.4s" }}
                 />
               </div>
@@ -562,7 +562,6 @@ export const ChatInterface = ({
           <span className="text-sm font-semibold text-text-primary">
             Quick prompt
           </span>
-          <span className="text-xs text-text-muted">Klik untuk isi cepat</span>
         </div>
         <div className="flex flex-wrap gap-2 pb-1">
           {CHAT_SUGGESTIONS.map((suggestion) => {

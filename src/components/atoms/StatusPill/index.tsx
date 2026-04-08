@@ -1,4 +1,3 @@
-// src/components/atoms/StatusPill.tsx
 import { LucideIcon } from "lucide-react";
 import { cn } from "@/app/lib/utils";
 
